@@ -43,6 +43,5 @@ The project is connected to OpenAI Sites and includes GitHub Actions automation:
 
 - `CI` runs linting, the production build, and rendered regression tests for every pull request and push to `main`.
 - `Deploy production` publishes a CI-verified `main` revision to Cloudflare Workers.
-- Dependabot maintains npm and GitHub Actions dependencies on a controlled schedule.
 
 To enable automatic Cloudflare deployment, add the repository secrets `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID`, then set the repository variable `CLOUDFLARE_DEPLOY_ENABLED` to `true`. Keep production secrets in GitHub; never commit them to the repository.
